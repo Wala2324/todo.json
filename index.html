@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Applikation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Todo Lista</h1>
+        <input type="text" id="todo-input" placeholder="Skriv en ny uppgift..." />
+        <button id="add-btn">Lägg till uppgift</button>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <!-- Modal för borttagning av ej klarmarkerade todos -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <p>Du kan inte ta bort en todo som inte är klarmarkerad!</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
